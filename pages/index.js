@@ -14,8 +14,6 @@ import { useState } from "react";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
-  console.log(listPortfolioProject);
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -118,21 +116,22 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image key={1} src={vv} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-              <p className="py-2">Creating elegant design suited for your needs following core design theory</p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h3 className="text-lg font-medium pt-8 pb-2">Awesome Front End</h3>
+              <p className="py-2">Creating awesome and fully functionality Web App suited for your needs following core design</p>
+              <h4 className="py-4 text-teal-600">Tech Tools I use</h4>
+              <p className="text-gray-800 py-1">HTML</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">React JS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={ee} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-              <p className="py-2">Creating elegant design suited for your needs following core design theory</p>
+              <h3 className="text-lg font-medium pt-8 pb-2">Entertaining Videos</h3>
+              <p className="py-2">Creating entertain video suited for your needs for every platforms.</p>
               <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Adobe Premiere Pro</p>
+              <p className="text-gray-800 py-1">Adobe After Effects</p>
             </div>
           </div>
         </section>
@@ -147,17 +146,15 @@ export default function Home() {
           <div className="flex flex-col gap-10 pt-10 lg:flex-row lg:flex-wrap">
             {listPortfolioProject.map((item, index) => (
               <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl group">
-                <a href="https://movie-matsuri.netlify.app/" target="_blank" rel="noopener noreferrer">
-                  <Image src={item.img} className=" rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-                </a>
-                <div className="justify-between pr-8 my-10  flex">
+                <Image src={item.img} className="rounded-t-lg object-cover " width={"100%"} height={"100%"} layout="responsive" />
+                <div className="justify-between md:pr-8 md:my-10 hidden md:flex ">
                   <div>
-                    <a href={`${item.liveDemo}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-2 rounded-md ml-8">
+                    <a href={`${item.liveDemo}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-1 rounded-md md:ml-8 ">
                       View Demo
                     </a>
                   </div>
                   <div>
-                    <a href={`${item.sourceCode}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-2 rounded-md ml-8">
+                    <a href={`${item.sourceCode}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-1 rounded-md md:ml-8 ">
                       Look Source Code
                     </a>
                   </div>
