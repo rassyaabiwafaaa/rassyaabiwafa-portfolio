@@ -4,25 +4,17 @@ import { BsFillMoonStarsFill, BsFillSunFill, BsTelegram } from "react-icons/bs";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub, AiFillBehanceCircle, AiFillMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import Image from "next/image";
-import ee from "../public/ee.png";
-import vv from "../public/vv.png";
-import dd from "../public/dd.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import code1 from "../public/code1.png";
-import code2 from "../public/code2.png";
-import code3 from "../public/code3.png";
-import code4 from "../public/code4.png";
-import code5 from "../public/code5.png";
-import code6 from "../public/code6.png";
-import cupcake from "../public/cupcake-01.png";
+
+import { ee, vv, dd, web1, web2, web3, web4, code1, code2, code3, code4, code5, code6, cupcake } from "../public/dummy/image/index";
+
+import { listPortfolioProject, listPortfolioDesign } from "../public/dummy/portfolio/index";
 
 import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+
+  console.log(listPortfolioProject);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -49,7 +41,7 @@ export default function Home() {
                 )}
               </ul>
               <li>
-                <a href="https://drive.google.com/drive/folders/1jvL-CJLONq8lTllcFlB8Bcol1vFNILjG" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-cyan-500 to-teal-500  text-white px-4 py-2 rounded-md ml-8">
+                <a href="https://drive.google.com/drive/folders/1jvL-CJLONq8lTllcFlB8Bcol1vFNILjG" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8">
                   Resume
                 </a>
               </li>
@@ -105,6 +97,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Services */}
         <section id="services">
           <div className="text-center pt-40">
             <h3 className="text-3xl py-1 dark:text-teal-600">Services I offer</h3>
@@ -144,41 +137,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="text-center pt-40 ">
-            <h3 className="text-3xl py-1 dark:text-teal-600">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">The designs I have been created</p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://www.behance.net/gallery/132936271/Food-Delivery-Application-User-Interface-Design" target="_blank" rel="noopener noreferrer">
-                <Image src={web1} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://www.behance.net/gallery/131336141/Bogor-Berwisata" target="_blank" rel="noopener noreferrer">
-                <Image src={web2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <Image src={web3} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://www.behance.net/gallery/132441735/Narama-Mandiri-Website-Design" target="_blank" rel="noopener noreferrer">
-                <Image src={web4} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-          </div>
-          <p className="text-center dark:text-white">
-            Want to see more designs?{" "}
-            <span className="text-teal-600">
-              <a href="https://www.behance.net/rassyaabiwafa" target="_blank" rel="noopener noreferrer">
-                klik here
-              </a>
-            </span>
-          </p>
-        </section>
-
+        {/* Portfolio Projects */}
         <section>
           <div className="text-center pt-40 ">
             <h3 className="text-3xl py-1 dark:text-teal-600">Portfolio</h3>
@@ -186,41 +145,62 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">The projects I have been created</p>
           </div>
           <div className="flex flex-col gap-10 pt-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://movie-matsuri.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={code1} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://modernbankapp-rassyaabiwafa.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={code2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://propertycompany.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={code3} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://touravel-rassyaabiwafa.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={code4} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://gerichtrestaurant-rassyaabiwafa.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={code5} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out">
-              <a href="https://weather-app-rassyaabiwafa.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={code6} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
-              </a>
-            </div>
+            {listPortfolioProject.map((item, index) => (
+              <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl group">
+                <a href="https://movie-matsuri.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <Image src={item.img} className=" rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+                </a>
+                <div className="justify-between pr-8 my-10  flex">
+                  <div>
+                    <a href={`${item.liveDemo}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-2 rounded-md ml-8">
+                      View Demo
+                    </a>
+                  </div>
+                  <div>
+                    <a href={`${item.sourceCode}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-2 rounded-md ml-8">
+                      Look Source Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
           <p className="text-center dark:text-white py-5">
             Want to see more projects?{" "}
             <span className="text-teal-600">
               <a href="https://www.github.com/rassyaabiwafaaa" target="_blank" rel="noopener noreferrer">
+                klik here
+              </a>
+            </span>
+          </p>
+        </section>
+
+        {/* Portfolio Designs */}
+        <section>
+          <div className="text-center pt-40 ">
+            <h3 className="text-3xl py-1 dark:text-teal-600">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">The designs I have been created</p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            {listPortfolioDesign?.map((item, index) => (
+              <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl group">
+                <a href="https://movie-matsuri.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <Image src={item.img} className=" rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+                </a>
+                <div className="justify-center pr-8 my-10  flex">
+                  <div>
+                    <a href={`${item.link}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-2 rounded-md ml-8">
+                      View Design
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center dark:text-white pb-10">
+            Want to see more designs?{" "}
+            <span className="text-teal-600">
+              <a href="https://www.behance.net/rassyaabiwafa" target="_blank" rel="noopener noreferrer">
                 klik here
               </a>
             </span>
