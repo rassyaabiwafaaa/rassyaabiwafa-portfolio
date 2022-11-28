@@ -145,8 +145,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 pt-10 lg:flex-row lg:flex-wrap">
             {listPortfolioProject.map((item, index) => (
-              <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl group">
-                <Image src={item.img} className="rounded-t-lg object-cover " width={"100%"} height={"100%"} layout="responsive" />
+              <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl">
+                <Image src={item.img} className="rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
                 <div className="justify-between md:pr-8 md:my-10 hidden md:flex ">
                   <div>
                     <a href={`${item.liveDemo}`} target={`_blank`} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white md:px-4 md:py-2 p-1 rounded-md md:ml-8 ">
