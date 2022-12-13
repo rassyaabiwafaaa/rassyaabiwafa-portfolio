@@ -14,5 +14,6 @@ import code6 from "./code6.png";
 import cupcake from "./cupcake-01.png";
 import luxspace from "./code-luxspace.png";
 import shoppify from "./code-dashboard.png";
+import square from "./square.jpg";
 
-export { ee, vv, dd, web1, web2, web3, web4, luxspace, shoppify, code1, code2, code3, code4, code5, code6, cupcake };
+export { ee, vv, dd, web1, web2, web3, web4, luxspace, shoppify, code1, code2, code3, code4, code5, code6, cupcake, square };

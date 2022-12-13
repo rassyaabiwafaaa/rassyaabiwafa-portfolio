@@ -5,7 +5,7 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub, AiFillBehanceCircle, AiF
 import { BsWhatsapp } from "react-icons/bs";
 import Image from "next/image";
 
-import { ee, vv, dd, web1, web2, web3, web4, code1, code2, code3, code4, code5, code6, cupcake } from "../public/dummy/image/index";
+import { ee, vv, dd, cupcake, square } from "../public/dummy/image/index";
 
 import { listPortfolioProject, listPortfolioDesign } from "../public/dummy/portfolio/index";
 
@@ -46,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-52 h-52 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={cupcake} layout="fill" objectFit="cover" className="fixed " priority />
+            <Image src={square} layout="fill" objectFit="cover" className="fixed " priority />
           </div>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Rassya Abiwafa</h2>
