@@ -46,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-52 h-52 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={square} layout="fill" objectFit="cover" className="fixed " priority />
+            <Image src={square} alt="avatar" layout="fill" objectFit="cover" className="fixed " priority />
           </div>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Rassya Abiwafa</h2>
@@ -106,7 +106,7 @@ export default function Home() {
 
           <div className="lg:flex gap-10">
             <div className="w-1/2 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
-              <Image key={1} src={dd} width={100} height={100} />
+              <Image key={1} alt="UIdesignImage" src={dd} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">Creating elegant design suited for your needs following your desire</p>
               <h4 className="py-4 text-teal-600 ">Design Tools I use</h4>
@@ -115,7 +115,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="w-1/2 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
-              <Image key={1} src={vv} width={100} height={100} />
+              <Image key={1} alt="CodeImage" src={vv} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Awesome Front End</h3>
               <p className="py-2">Creating awesome and fully functionality Web App suited for your needs following core design</p>
               <h4 className="py-4 text-teal-600">Tech Tools I use</h4>
@@ -139,8 +139,8 @@ export default function Home() {
           <div className="flex flex-col gap-10 pt-10 lg:flex-row lg:flex-wrap">
             {listPortfolioProject.map((item, index) => (
               <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl">
-                <a href={item.liveDemo} target={"_blank"}>
-                  <Image src={item.img} className="rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+                <a href={item.liveDemo} target={"_blank"} rel={"noreferrer"}>
+                  <Image src={item.img} alt={`${item.name}`} className="rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
                 </a>
                 <div className="justify-between md:pr-8 md:my-10 hidden md:flex ">
                   <div>
@@ -177,7 +177,7 @@ export default function Home() {
             {listPortfolioDesign?.map((item, index) => (
               <div key={index} className="basis-1/3 flex-1 hover:shadow-xl transition-shadow ease-in-out bg-white rounded-xl group">
                 <a href="https://movie-matsuri.netlify.app/" target="_blank" rel="noopener noreferrer">
-                  <Image src={item.img} className=" rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
+                  <Image src={item.img} alt={`${item.name}`} className=" rounded-t-lg object-cover" width={"100%"} height={"100%"} layout="responsive" />
                 </a>
                 <div className="justify-center pr-8 my-10  flex">
                   <div>
