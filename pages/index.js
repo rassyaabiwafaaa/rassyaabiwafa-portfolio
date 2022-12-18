@@ -104,8 +104,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="lg:flex gap-10">
+            <div className="w-1/2 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
               <Image key={1} src={dd} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">Creating elegant design suited for your needs following your desire</p>
@@ -114,7 +114,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="w-1/2 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
               <Image key={1} src={vv} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Awesome Front End</h3>
               <p className="py-2">Creating awesome and fully functionality Web App suited for your needs following core design</p>
@@ -124,14 +124,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Tailwind CSS</p>
               <p className="text-gray-800 py-1">Javascript</p>
               <p className="text-gray-800 py-1">React JS</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={ee} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Entertaining Videos</h3>
-              <p className="py-2">Creating entertain video suited for your needs for every platforms.</p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1">Adobe Premiere Pro</p>
-              <p className="text-gray-800 py-1">Adobe After Effects</p>
+              <p className="text-gray-800 py-1">And will be more...</p>
             </div>
           </div>
         </section>
