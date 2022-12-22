@@ -100,12 +100,12 @@ export default function Home() {
           <div className="text-center pt-40">
             <h3 className="text-3xl py-1 dark:text-teal-600">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Since the beginning of my journey as a front end developer, i have done work for <span className="text-teal-500">agencies</span> to create digital products for both business and consumer use.
+              Since the beginning of my journey as a front end developer, I have done work for <span className="text-teal-500">agencies</span> to create digital products for both business and consumer use.
             </p>
           </div>
 
-          <div className="lg:flex gap-10">
-            <div className="w-1/2 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
+          <div className="flex flex-wrap gap-10">
+            <div className="flex-1 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
               <Image key={1} alt="UIdesignImage" src={dd} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">Creating elegant design suited for your needs following your desire</p>
@@ -114,7 +114,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
-            <div className="w-1/2 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
+            <div className="flex-1 text-center shadow-lg p-20 rounded-xl my-10 dark:bg-white">
               <Image key={1} alt="CodeImage" src={vv} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Awesome Front End</h3>
               <p className="py-2">Creating awesome and fully functionality Web App suited for your needs following core design</p>
