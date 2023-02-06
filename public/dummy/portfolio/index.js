@@ -10,7 +10,7 @@ const listPortfolioProject = [
   {
     name: "Shoppify Dashboardd App",
     img: shoppify,
-    sourceCode: "#",
+    sourceCode: "https://github.com/rassyaabiwafaaa/dashboard",
     liveDemo: "https://shoppify-dashboard-app.netlify.app/",
   },
   {

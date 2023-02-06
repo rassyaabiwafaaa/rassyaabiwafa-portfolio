@@ -46,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-52 h-52 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={square} alt="avatar" layout="fill" objectFit="cover" className="fixed " priority />
+            <Image src={cupcake} alt="avatar" layout="fill" objectFit="cover" className="fixed " priority />
           </div>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Rassya Abiwafa</h2>
