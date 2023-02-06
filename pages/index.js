@@ -161,7 +161,7 @@ export default function Home() {
             Want to see more projects?{" "}
             <span className="text-teal-600">
               <a href="https://www.github.com/rassyaabiwafaaa" target="_blank" rel="noopener noreferrer">
-                klik here
+                click here
               </a>
             </span>
           </p>
@@ -193,7 +193,7 @@ export default function Home() {
             Want to see more designs?{" "}
             <span className="text-teal-600">
               <a href="https://www.behance.net/rassyaabiwafa" target="_blank" rel="noopener noreferrer">
-                klik here
+                click here
               </a>
             </span>
           </p>
