@@ -16,5 +16,6 @@ import luxspace from "./code-luxspace.png";
 import shoppify from "./code-dashboard.png";
 import square from "./square.jpg";
 import youtubeClone from "./code-youtubeClone.png";
+import yasindo from "./code-yasindo.png";
 
-export { youtubeClone, ee, vv, dd, web1, web2, web3, web4, luxspace, shoppify, code1, code2, code3, code4, code5, code6, cupcake, square };
+export { yasindo, youtubeClone, ee, vv, dd, web1, web2, web3, web4, luxspace, shoppify, code1, code2, code3, code4, code5, code6, cupcake, square };

@@ -1,4 +1,4 @@
-import { ee, vv, dd, web1, web2, web3, web4, shoppify, code1, code2, code3, code4, code5, code6, cupcake, luxspace } from "../image/index";
+import { ee, vv, dd, web1, web2, web3, web4, shoppify, code1, code2, code3, code4, code5, code6, cupcake, luxspace, youtubeClone, yasindo } from "../image/index";
 
 const listPortfolioProject = [
   {
@@ -8,10 +8,10 @@ const listPortfolioProject = [
     liveDemo: "https://luxspace-shop.netlify.app/",
   },
   {
-    name: "Shoppify Dashboardd App",
-    img: shoppify,
-    sourceCode: "https://github.com/rassyaabiwafaaa/dashboard",
-    liveDemo: "https://shoppify-dashboard-app.netlify.app/",
+    name: "Youtube Cloning App",
+    img: youtubeClone,
+    sourceCode: "https://github.com/rassyaabiwafaaa/Youtube-Clone",
+    liveDemo: "https://rassyaabiwafa-youtube-clone.netlify.app/",
   },
   {
     name: "Modern Bank App",
@@ -26,16 +26,16 @@ const listPortfolioProject = [
     liveDemo: "https://gerichtrestaurant-rassyaabiwafa.netlify.app/",
   },
   {
-    name: "Touravel",
-    img: code4,
-    sourceCode: "#",
-    liveDemo: "https://touravel-rassyaabiwafa.netlify.app/",
+    name: "Narama Mandiri",
+    img: web4,
+    sourceCode: false,
+    liveDemo: "https://naramamandiri.com",
   },
   {
-    name: "Property Website",
-    img: code3,
-    sourceCode: "https://github.com/rassyaabiwafaaa/property-company-profile",
-    liveDemo: "https://propertycompany.netlify.app/",
+    name: "Yasindo",
+    img: yasindo,
+    sourceCode: "https://github.com/rassyaabiwafaaa/yasindo",
+    liveDemo: "https://yasindo-kemang.netlify.app/",
   },
 ];
 
@@ -53,7 +53,7 @@ const listPortfolioDesign = [
   {
     name: "Ternak Uang",
     img: web3,
-    link: "#",
+    link: "https://www.behance.net/rassyaabiwafa",
   },
   {
     name: "Narama Mandiri",
